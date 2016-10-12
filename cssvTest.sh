@@ -1,0 +1,9 @@
+#!/bin/sh
+./apps/Shadows/Shadows --cssv-zfail 1 --cssv-localAtomic 1 --cssv-cullSides 1 --test-output SponzaCSSVFLC --method cssv --window-size-x 1920 --window-size-y 1080 --test fly --model /data/models/Sponza/sponza.obj --camera-path sponza_fly.txt 
+./apps/Shadows/Shadows --cssv-zfail 1 --cssv-localAtomic 1 --cssv-cullSides 0 --test-output SponzaCSSVFLN --method cssv --window-size-x 1920 --window-size-y 1080 --test fly --model /data/models/Sponza/sponza.obj --camera-path sponza_fly.txt 
+./apps/Shadows/Shadows --cssv-zfail 1 --cssv-localAtomic 0 --cssv-cullSides 1 --test-output SponzaCSSVFGC --method cssv --window-size-x 1920 --window-size-y 1080 --test fly --model /data/models/Sponza/sponza.obj --camera-path sponza_fly.txt 
+./apps/Shadows/Shadows --cssv-zfail 1 --cssv-localAtomic 0 --cssv-cullSides 0 --test-output SponzaCSSVFGN --method cssv --window-size-x 1920 --window-size-y 1080 --test fly --model /data/models/Sponza/sponza.obj --camera-path sponza_fly.txt 
+./apps/Shadows/Shadows --cssv-zfail 0 --cssv-localAtomic 1 --cssv-cullSides 1 --test-output SponzaCSSVPLC --method cssv --window-size-x 1920 --window-size-y 1080 --test fly --model /data/models/Sponza/sponza.obj --camera-path sponza_fly.txt 
+./apps/Shadows/Shadows --cssv-zfail 0 --cssv-localAtomic 1 --cssv-cullSides 0 --test-output SponzaCSSVPLN --method cssv --window-size-x 1920 --window-size-y 1080 --test fly --model /data/models/Sponza/sponza.obj --camera-path sponza_fly.txt 
+./apps/Shadows/Shadows --cssv-zfail 0 --cssv-localAtomic 0 --cssv-cullSides 1 --test-output SponzaCSSVPGC --method cssv --window-size-x 1920 --window-size-y 1080 --test fly --model /data/models/Sponza/sponza.obj --camera-path sponza_fly.txt 
+./apps/Shadows/Shadows --cssv-zfail 0 --cssv-localAtomic 0 --cssv-cullSides 0 --test-output SponzaCSSVPGN --method cssv --window-size-x 1920 --window-size-y 1080 --test fly --model /data/models/Sponza/sponza.obj --camera-path sponza_fly.txt 
