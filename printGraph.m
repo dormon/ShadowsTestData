@@ -1,3 +1,4 @@
+figure('Position',[0,0,1920,1080]);
 file = argv(){1};
 data = csvread(file);
 header = strsplit(fgetl(fopen (file)),",")
@@ -17,5 +18,5 @@ for i = 2:columns(data)-1
 endfor
 xlabel ("frame");
 ylabel ("ms");
-legend (flip(header(2:columns(data)-1)));
+legend (fliplr(header(2:columns(data)-1)));
 pause(10)

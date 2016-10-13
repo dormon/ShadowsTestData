@@ -1,3 +1,4 @@
+figure('Position',[0,0,1920,1080]);
 file = argv(){1};
 argv()
 
