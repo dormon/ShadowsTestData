@@ -12,7 +12,7 @@ endfunction
 
 nofFiles = length(argv())
 
-plotColor = 'brgkmcyw';
+plotColor = 'brbrbrbrbrbrbrbr';
 for f = 1:nofFiles
   data = csvread(argv(){f});
   values = accumulateColumns(data);
