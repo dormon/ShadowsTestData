@@ -12,4 +12,6 @@ FRAMESPERMEASUREMENT=1
 TEST="--window-size-x ${WINDOWSIZEX} --window-size-y ${WINDOWSIZEY} --method ${METHOD} --test fly --model ${SCENE} --test-fly-keys ${PATH} --test-fly-length ${LENGTH} --test-framesPerMeasurement ${FRAMESPERMEASUREMENT}"
 
 ${APP} --zfail 0 --vssv-usePlanes 0 --vssv-useStrips 0 --vssv-useAll 0 --test-output SponzaVSSVOld ${TEST} 
-${APP} --zfail 0 --vssv-usePlanes 1 --vssv-useStrips 1 --vssv-useAll 1 --test-output SponzaVSSVNew ${TEST} 
+${APP} --zfail 0 --vssv-usePlanes 1 --vssv-useStrips 0 --vssv-useAll 0 --test-output SponzaVSSVPlanes ${TEST} 
+${APP} --zfail 0 --vssv-usePlanes 1 --vssv-useStrips 1 --vssv-useAll 0 --test-output SponzaVSSVPlanesStrips ${TEST} 
+${APP} --zfail 0 --vssv-usePlanes 1 --vssv-useStrips 1 --vssv-useAll 1 --test-output SponzaVSSVPlanesStripsDivergence ${TEST} 
