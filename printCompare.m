@@ -14,14 +14,16 @@ nofFiles = length(argv())
 
 plotColor = 'brbrbrbrbrbrbrbr';
 for f = 1:nofFiles
-  data = csvread(argv(){f});
+  fileName = argv(){f};
+  data = csvread(fileName);
   values = accumulateColumns(data);
-  plot(data(:,1),values*1000,sprintf( '%s', plotColor(f)))
+  milisecondsInSecond = 1000;
+  plot(data(:,1),values*milisecondsInSecond,sprintf( '%s', plotColor(f)))
   hold on;
 endfor
 xlabel ("frame");
 ylabel ("ms");
 legend (argv());
 
-pause(15);
+pause(2);
 
