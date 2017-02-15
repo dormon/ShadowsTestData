@@ -12,7 +12,7 @@ endfunction
 
 nofFiles = length(argv())
 
-plotColor = 'brbrbrbrbrbrbrbr';
+plotColor = 'krgbmckrgbmck';
 for f = 1:nofFiles
   fileName = argv(){f};
   data = csvread(fileName);

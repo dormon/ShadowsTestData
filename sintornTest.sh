@@ -1,5 +1,5 @@
 #!/bin/sh
-APP=/home/dormon/git/gpuengine-code/build/apps/Shadows/Shadows
+APP=/home/dormon/git/GPUEngine/build/apps/Shadows/Shadows
 SCENE=/media/windata/ft/prace/models/sponza/sponza.obj
 PATH=/home/dormon/git/ShadowsTestData/sponza_fly.txt
 WINDOWSIZEX=1920
